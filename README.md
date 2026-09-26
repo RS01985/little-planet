@@ -54,3 +54,7 @@ Collecting all six stars reveals a CSS 3D rainbow celebration. The rainbow and s
 ## On-demand terrain imagery
 
 NASA Blue Marble Next Generation January 2004 A1–D2 images (each 21600 × 21600) are the source for the `terrain/` JPEG pyramid. Official source designation: 500 m/pixel. Source page and original image URLs were checked on 2026-09-26. Original images stay outside the published repository; only locally generated 1350-pixel tiles are served. Detail downloads start at 3× for modern imagery. The viewer wraps at the date line, falls back to the base map if a tile fails, and disables detail requests in the standalone offline file. Imagery is a historical satellite mosaic, not live or street-level imagery.
+
+## Thirty-second Earth transitions
+
+The six adjacent Earth-history transitions each have a 30-second mini cinema. Use the large next-stop button or the next arrow; direct timeline selection still jumps straight to a story. A replay button is available from the second stop onward. The live WebGL planet blends between illustrative epochs, with six themed CSS 3D particle scenes. Each Cantonese track has three ten-second sections and synchronized captions. Pause, resume, replay, skip, Escape and reduced-motion settings are supported. These are narrative illustrations, not physical simulations or precise paleogeographic reconstructions.
