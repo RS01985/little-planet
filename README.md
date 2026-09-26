@@ -49,7 +49,7 @@ The geography explorer uses the seven-continent / five-ocean naming convention d
 
 Ten gentle missions, all played on the same screen, with six kinds of play: find a picture on the globe, spin the globe until a place sits inside a circle, drag the lion to its home, pick the right picture, tap an animal to make it hop or waddle, and turn the whole globe once. Each has a bundled Cantonese prompt and fact. There are no time limits or penalties, and “Help me turn” buttons avoid getting stuck. Progress lasts for the current game only; nothing is uploaded or tracked. The pins mark example locations, not boundaries or complete habitat ranges.
 
-Collecting all ten stars turns the globe area into an after-the-rain scene: rain stops, the sky clears and a glowing 3D rainbow appears (red outside, violet inside, with a fainter reversed secondary bow). Children can drag to turn it. Reduced-motion settings show the finished scene without animation.
+Collecting all ten stars turns the globe area into an after-the-rain valley: rain stops, the sky clears and a glowing rainbow appears (red outside, violet inside, with a fainter reversed secondary bow), its feet fading behind the hills. Dragging moves the grass, valley and sky at different speeds and turns the bow in 3D. The painted valley (`images/rainbow-valley.jpg`) was generated for this site with an AI image tool (prompt in `tools/image-prompts.md`); the rainbow, rain, mist and depth layers are drawn in code. Reduced-motion settings show the finished scene without animation.
 
 ## On-demand terrain imagery
 
