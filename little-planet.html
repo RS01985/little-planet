@@ -25,6 +25,25 @@ html{overflow-x:hidden;max-width:100%}.app{width:100%}.world{overflow:hidden}.mo
 #earthFilm{width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;border-radius:0;background:radial-gradient(ellipse at 50% 42%,#172f42 0,#07131f 50%,#030910 100%);overflow:auto}.film-shell{min-height:100%;max-width:1100px;margin:auto;padding:20px 5% 24px;display:flex;flex-direction:column}.film-header{height:auto;min-height:76px;border:0;gap:20px;flex-shrink:0}.film-header h2{font-size:24px;line-height:1.35;margin:6px 0 0;font-weight:650;letter-spacing:.02em}#filmEyebrow{font-size:10px;letter-spacing:.16em;color:#a9d5d8}#filmSkip{border:1px solid #3d5b6e;border-radius:25px;white-space:nowrap;min-height:46px}.film-theatre{position:relative;isolation:isolate;flex:1;min-height:350px;display:grid;place-items:center;perspective:900px;overflow:hidden}.film-aura{position:absolute;width:80%;height:65%;border-radius:50%;background:radial-gradient(ellipse,#639dc529,transparent 65%);filter:blur(24px)}#filmWorld{width:100%;grid-area:1/1;z-index:1}#filmWorld .world{width:100%;height:min(57dvh,570px);min-height:350px;margin:0}#filmWorld .globe-wrap{width:min(540px,83%);max-height:none}#filmWorld .orbit,#filmWorld .world-caption,#filmWorld .globe-toolbar,#filmWorld .zoom-level,#filmWorld #place,#filmWorld #gamePins{display:none!important}#filmWorld #globe{pointer-events:none}.film-orbit{position:absolute;width:76%;height:36%;border:1px solid #b6ddf12e;border-radius:50%;transform:rotateX(54deg) rotateZ(-21deg);pointer-events:none;z-index:2}.film-copy{position:relative;z-index:3;text-align:center;width:min(780px,100%);margin:auto;flex-shrink:0}#filmCaption{font-size:clamp(17px,2.3vw,25px);line-height:1.7;min-height:3.4em;color:#f0f6ed;margin:14px 0 12px;text-wrap:balance}#filmChapters{display:flex;justify-content:center;gap:8px}#filmChapters span{height:4px;width:22px;border-radius:8px;background:#385263}#filmChapters .active{background:var(--mint);width:48px}#filmNote{font-size:10px;color:#9db7c8;letter-spacing:.05em}.film-controls{display:flex;justify-content:center;align-items:center;gap:24px;margin-top:20px}.film-controls .listen{min-width:110px;justify-content:center;background:#193345}.film-controls .quiet{min-width:90px}#filmTime{font-size:12px;color:#c4d6dd;font-variant-numeric:tabular-nums;min-width:70px}.film-track{height:3px;margin-top:20px;border-radius:4px;background:#233d4d;overflow:hidden}#filmProgress{width:0;height:100%;background:linear-gradient(90deg,#99d8e8,#d7f0ad)}#filmParticles{position:absolute;inset:0;transform-style:preserve-3d;z-index:2;pointer-events:none}.film-particle{position:absolute;left:var(--x);top:var(--y);width:var(--s);height:var(--s);background:linear-gradient(135deg,#8bdbf0,#15465f);border:1px solid #b8f2ff88;border-radius:60% 40% 55% 45%;box-shadow:inset -7px -6px 12px #001320aa,0 5px 15px #0004;transform-style:preserve-3d;animation:film-float 11s ease-in-out infinite;animation-delay:var(--delay);opacity:.68}.film-rain .film-particle{border-radius:60% 0 60% 60%;background:linear-gradient(135deg,#cdf5ff,#2b78a7 60%,#163553);animation-name:film-rain}.film-rain .film-particle:nth-child(3n){border-radius:35% 65% 45% 55%;background:linear-gradient(135deg,#f2b16b,#733d23,#1d2428);border-color:#d49b6266}.film-life .film-particle{height:calc(var(--s)*.5);border-radius:50%;background:radial-gradient(ellipse at 35% 30%,#e1ffd7,#75b6a1 43%,#18495e 80%);box-shadow:inset 0 0 0 3px #a5e7c577,0 0 22px #65cdbb33}.film-life .film-particle:after{content:'';position:absolute;width:20%;height:25%;border-radius:50%;background:#25385d;left:38%;top:32%}.film-land .film-particle,.film-dino .film-particle{border-radius:8px;clip-path:polygon(9% 0,80% 6%,100% 45%,69% 94%,29% 86%,0 43%);background:linear-gradient(130deg,#d9dc94,#729d67 46%,#644b35 58%,#362c20);border:0;animation-name:film-land}.film-dino .film-particle{animation-direction:reverse}.film-dino .film-particle:nth-child(4n):after{content:'⁙';position:absolute;color:#d6ecc6;font-size:22px;inset:0;text-align:center}.film-ice .film-particle{border:0;border-radius:0;clip-path:polygon(50% 0,90% 24%,100% 72%,50% 100%,0 72%,10% 24%);background:conic-gradient(from 35deg,#e6fbff,#70accb,#def8ff,#658ba9,#e6fbff);opacity:.8}.film-home .film-particle{border-radius:0 80% 0 80%;background:linear-gradient(135deg,#f3ffd9,#b7e399 30%,#499274 70%,#24574d);border:1px solid #d4efa377}.film-home .film-particle:nth-child(3n){border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff6c1,#efc785,#714621);width:12px;height:12px}.film-paused .film-particle{animation-play-state:paused}@keyframes film-float{0%,100%{transform:translate3d(-8px,20px,-80px) rotateX(10deg) rotateY(-25deg) rotateZ(-10deg)}50%{transform:translate3d(16px,-24px,60px) rotateX(28deg) rotateY(45deg) rotateZ(25deg)}}@keyframes film-rain{0%,100%{transform:translate3d(-12px,-22px,-50px) rotateZ(-36deg) rotateY(-15deg)}50%{transform:translate3d(12px,28px,35px) rotateZ(-28deg) rotateY(35deg)}}@keyframes film-land{0%,100%{transform:translate3d(-24px,8px,-40px) rotateX(32deg) rotateY(-40deg) rotateZ(-16deg)}50%{transform:translate3d(20px,-18px,45px) rotateX(10deg) rotateY(28deg) rotateZ(20deg)}}@media(max-width:760px){.film-shell{padding:14px 5% 20px}.film-header{min-height:74px;gap:12px}.film-header h2{font-size:18px}#filmSkip{font-size:10px;padding:9px}.film-theatre{min-height:290px}#filmWorld .world{height:43dvh;min-height:290px}#filmWorld .globe-wrap{width:min(380px,92%)}#filmCaption{font-size:18px;min-height:5.1em;margin-top:10px}#filmNote{font-size:9px}.film-controls{gap:10px;margin-top:14px}.film-track{margin-top:15px}.film-particle{width:calc(var(--s)*.75);height:calc(var(--s)*.75)}}@media(max-height:650px) and (min-width:760px){.film-header{min-height:50px}.film-header h2{font-size:18px}.film-shell{padding-top:10px;padding-bottom:12px}.film-theatre,#filmWorld .world{min-height:240px;height:43dvh}#filmWorld .globe-wrap{width:300px}#filmCaption{font-size:17px;min-height:3.4em;margin:5px 0}.film-controls{margin-top:7px}.film-track{margin-top:7px}}@media(prefers-reduced-motion:reduce){.film-particle{animation:none!important;transform:rotateZ(-10deg)}.film-orbit{transform:rotateX(54deg) rotateZ(-21deg)}}
 
 body.film-open{overflow:hidden}
+
+.closeup-entry{position:absolute;transform:translate(-50%,-50%);z-index:5;min-height:48px;border-radius:26px;background:#ffd166;color:#23180a;font-size:14px;font-weight:800;padding:10px 18px;box-shadow:0 0 0 6px #ffd16633,0 8px 30px #000a;white-space:nowrap;animation:cuPulse 2.2s ease-in-out infinite}
+@keyframes cuPulse{50%{box-shadow:0 0 0 14px #ffd16611,0 8px 30px #000a}}
+@media(prefers-reduced-motion:reduce){.closeup-entry{animation:none}}
+dialog.closeup{padding:0;width:100vw;height:100dvh;max-width:none;max-height:none;border:0;border-radius:0;background:#07121b;overflow:hidden;line-height:1.4}
+dialog.closeup[open]{display:grid;grid-template-rows:auto 1fr auto}
+.closeup-bar{display:flex;align-items:center;gap:10px;padding:12px 70px 12px 16px;flex-wrap:wrap;position:relative}
+.closeup-bar h2{margin:0;font-size:20px}
+.closeup-bar .close{top:8px;right:12px}
+.closeup-switch{display:flex;background:#132936;border-radius:26px;padding:4px}
+.closeup-switch button,.closeup-chip{min-height:44px;padding:0 16px;border-radius:22px;font-size:14px;font-weight:750;color:#cfe0e6;background:transparent}
+.closeup-switch button[aria-pressed="true"]{background:var(--mint);color:#0b2130}
+.closeup-chip{border:1px solid #3d5b6e}.closeup-chip[aria-pressed="true"]{background:#ffd16622;border-color:#ffd166;color:#ffe6a6}
+#closeupCanvas{width:100%;height:100%;display:block;touch-action:none;cursor:grab;min-height:0}
+.closeup-tools{position:absolute;right:16px;bottom:88px;display:flex;flex-direction:column;gap:10px}
+.closeup-tools button{width:54px;height:54px;border-radius:50%;background:#132936ee;color:#fff;font-size:26px;box-shadow:0 4px 20px #0008}
+.closeup-info{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline;padding:10px 16px calc(10px + env(safe-area-inset-bottom));font-size:13px;color:#c3d2d9;background:#07121b}
+#closeupZoomText{color:var(--mint);font-weight:750}#closeupCredit{flex-basis:100%;font-size:11px;color:#8ea3ae}
+@media(max-width:560px){.closeup-bar h2{font-size:17px;flex-basis:100%}.closeup-switch button,.closeup-chip{padding:0 12px;font-size:13px}.closeup-tools{bottom:104px}}
 </style></head>
 <body>
 <canvas id="stars" aria-hidden="true"></canvas>
@@ -34,12 +53,12 @@ body.film-open{overflow:hidden}
 <nav class="modes" aria-label="選擇旅程"><button id="earthMode" class="active" aria-pressed="true"><span aria-hidden="true">◉</span> <span data-t="earthStory">地球的故事</span></button><button id="humanMode" aria-pressed="false"><span aria-hidden="true">⁙</span> <span data-t="humanStory">人類的旅程</span></button><button id="gameMode" aria-pressed="false"><span aria-hidden="true">✦</span> <span id="gameModeLabel">地球小遊戲</span></button></nav>
 <section class="stage" aria-label="互動地球">
 <section id="gamePanel" class="game-panel" aria-label="地球小遊戲" hidden></section><div class="story"><div class="era"><span class="live-dot"></span><span id="eraDate"></span></div><h1 id="title"></h1><p id="description"></p><div class="story-actions"><button id="listen" class="listen"><span aria-hidden="true">♫</span> <span data-t="listen">聽故事</span></button><span id="chapter"></span></div><div class="wonder"><span class="wonder-symbol" aria-hidden="true">✧</span><div><span class="mini" data-t="wonder">一起想一想</span><p id="question"></p></div></div><button id="start" class="primary"><span data-t="start">回到故事的開始</span><span aria-hidden="true">↗</span></button><button id="replayTransition" class="explore" hidden>重看 30 秒過場 ↻</button><button id="mapExplore" class="explore">認識大洲與海洋 ↗</button></div>
-<div class="world"><span id="zoomLevel" class="zoom-level" hidden></span><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="globe-wrap" id="globeWrap"><canvas id="globe" tabindex="0" role="img" aria-label="可以拖曳旋轉的地球；也可用方向鍵轉動"></canvas><canvas id="routes" aria-hidden="true"></canvas><div id="fallback" hidden><div class="fallback-sphere"></div><p data-t="fallback">此裝置未能顯示 3D；仍可探索全部故事。</p></div><div id="gamePins"></div><button id="place" class="place" hidden></button></div><div class="world-caption"><span class="tiny-star">✦</span><span id="worldCaption"></span></div><div class="globe-toolbar"><span class="drag-hint" data-t="drag">用手指轉轉地球</span><div class="tool-divider"></div><button id="rotate" title="暫停地球旋轉" aria-label="暫停地球旋轉" aria-pressed="true">Ⅱ</button><button id="zoomIn" aria-label="放大地球">＋</button><button id="zoomOut" aria-label="縮小地球">−</button><button id="reset" aria-label="重設地球視角">↺</button></div></div>
+<div class="world"><span id="zoomLevel" class="zoom-level" hidden></span><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="globe-wrap" id="globeWrap"><canvas id="globe" tabindex="0" role="img" aria-label="可以拖曳旋轉的地球；也可用方向鍵轉動"></canvas><canvas id="routes" aria-hidden="true"></canvas><div id="fallback" hidden><div class="fallback-sphere"></div><p data-t="fallback">此裝置未能顯示 3D；仍可探索全部故事。</p></div><div id="gamePins"></div><button id="place" class="place" hidden></button><button id="closeupEntry" class="closeup-entry" hidden></button></div><div class="world-caption"><span class="tiny-star">✦</span><span id="worldCaption"></span></div><div class="globe-toolbar"><span class="drag-hint" data-t="drag">用手指轉轉地球</span><div class="tool-divider"></div><button id="rotate" title="暫停地球旋轉" aria-label="暫停地球旋轉" aria-pressed="true">Ⅱ</button><button id="zoomIn" aria-label="放大地球">＋</button><button id="zoomOut" aria-label="縮小地球">−</button><button id="reset" aria-label="重設地球視角">↺</button></div></div>
 </section>
 <section class="timeline-panel" aria-label="故事時間軸"><div class="timeline-heading"><div><span class="tiny-star">✦</span> <span id="timelineTitle">每一站，都是新發現</span></div><button id="play" class="play"><span aria-hidden="true">▶</span><span data-t="play">自動旅行</span></button></div><div id="timeline" class="timeline"></div><div class="scrubber-row"><span id="oldest"></span><input id="scrubber" type="range" min="0" max="6" step="1" value="6" aria-label="選擇故事時間"><span data-t="now">今天</span></div><div class="timeline-bottom"><span id="timelineNote" data-t="notToScale">故事站之間的距離，不代表實際時間長短</span><div class="stepper"><button id="prev" aria-label="上一站">←</button><span id="stepCount"></span><button id="next" aria-label="下一站">→</button></div></div></section>
 </main><footer><span data-t="footer">給小小探險家，和陪他們看世界的大人。</span><button id="sources" data-t="sources">科學資料與影像來源 ↗</button></footer>
 </div>
-<dialog id="mapDialog"><button id="closeMap" class="close" aria-label="關閉">×</button><div id="mapBody"></div></dialog><dialog id="notes"><button id="closeNotes" class="close" aria-label="關閉">×</button><div id="notesBody"></div></dialog><div id="toast" role="status"></div>
+<dialog id="mapDialog"><button id="closeMap" class="close" aria-label="關閉">×</button><div id="mapBody"></div></dialog><dialog id="notes"><button id="closeNotes" class="close" aria-label="關閉">×</button><div id="notesBody"></div></dialog><dialog id="closeup" class="closeup" aria-labelledby="closeupTitle"><div class="closeup-bar"><h2 id="closeupTitle">近看墨爾本</h2><div class="closeup-switch" role="group"><button id="closeupNew" aria-pressed="true">新 10 米</button><button id="closeupOld" aria-pressed="false">舊 500 米</button></div><button id="closeupMarks" class="closeup-chip" aria-pressed="true">地標</button><button id="closeupClose" class="close" aria-label="關閉">×</button></div><canvas id="closeupCanvas" tabindex="0" aria-label="墨爾本衛星相，可拖曳及雙指縮放"></canvas><div class="closeup-tools"><button id="closeupOut" aria-label="縮小">−</button><button id="closeupFit" aria-label="看全個範圍">⤢</button><button id="closeupIn" aria-label="放大">＋</button></div><div class="closeup-info"><span id="closeupZoomText"></span><span id="closeupStatus" role="status"></span><small id="closeupCredit"></small></div></dialog><div id="toast" role="status"></div>
 <script>'use strict';
 // Little Planet — no libraries, accounts, tracking, or network requests.
 const $=id=>document.getElementById(id);
@@ -161,7 +180,7 @@ const sources=[
 ['美洲至少 23,000 年前的足跡','Footprints in the Americas, at least 23,000 years ago','National Park Service','https://www.nps.gov/whsa/learn/nature/fossilized-footprints.htm'],
 ['地球表面影像','Earth surface imagery','NASA Earth Observatory · Reto Stöckli (NASA/GSFC)','https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/base-map/']
 ];
-function openNotes(){stopPlay();stopSpeech();const zh=lang==='zh';$('notesBody').innerHTML=zh?`<h2>和孩子一起，慢慢看世界。</h2><p>每次選一站，轉一轉地球，讀兩句故事，再問一個問題。沒有分數，也沒有時間限制。</p><h3>這個模型告訴我們甚麼？</h3><p>現代地球使用 NASA 衛星觀測合成影像，不是即時畫面。雲層、日光及遠古地貌是藝術示意；盤古大陸的形狀與分裂並非精確的古地理重建。冰期站保留現代海岸線，沒有重建當時海平面。</p><h3>很久以前，到底有多久？</h3><p>時間軸為了方便小朋友操作，將故事分成等距站點；實際間隔相差很大。日期為約數。海洋站是約 40 億年前的場景，不是宣稱海洋剛在那時形成；有證據顯示液態水更早存在。生命站也不代表已知確切的生命起源時間。</p><h3>人類並不是沿著一條線走遍世界</h3><p>這裡講的是智人（Homo sapiens）。非洲的標記只是故事定位，不代表唯一誕生地點。圖上曲線只提示遷徙的大方向，不是確定的道路、起點或唯一通道。出非洲曾有多次更早的遷徙。亞洲與澳洲站的日期重疊；歐洲站表示約 4.5 萬年前的廣泛擴展，而非最早到達。美洲站採用白沙國家公園足跡的年代；人類到達的時間與路線仍在研究中。最後一站的線條只回顧這幾段故事，不涵蓋太平洋等所有遷徙。</p><h3>朗讀與操作</h3><p>廣東話故事使用已製作好的粵語音檔，不依賴裝置的預設中文聲音。英文朗讀使用裝置語音，部分聲音可能需要網絡。拖曳可上下左右轉動；雙指、滑鼠滾輪或＋／−可縮放至 32 倍。近看會隱藏示意雲層。網上版放大時會按需要載入 NASA 高清分區影像，最高使用官方標示每像素 500 米的資料；實際載入級別會配合視野及裝置。基本全球影像為 5400 × 2700。單一 HTML 離線版保留基本影像。可看國家尺度的海岸線、山脈與沙漠；不是街道地圖，也沒有國界，小國與城市細節有限。開啟系統「減少動態效果」時，地球不會自動旋轉。可以直接分享單一 HTML 檔；不用帳號。</p><h3>科學資料與影像來源</h3><p>官方資料搜尋核對日期：2026-09-26。以下資料支援相應故事；年代與模型限制如上。</p>`:`<h2>A little time to wonder, together.</h2><p>Pick a stop, turn the planet, read a tiny story, and ask one question. No scores. No rush.</p><h3>What are we looking at?</h3><p>Modern Earth uses a NASA satellite-observation mosaic, not a live view. Clouds, lighting and ancient landscapes are artistic illustrations. Pangaea and its breakup are not precise paleogeographic reconstructions. The ice-age scene keeps modern coastlines rather than reconstructing past sea level.</p><h3>A note about deep time</h3><p>Story stops have equal spacing for small hands, but cover very different amounts of time. Dates are approximate. The ocean scene is set around 4 billion years ago, not a claim that oceans first formed then; evidence suggests liquid water existed earlier. The tiny-life stop is not a claim to know the exact origin of life.</p><h3>Many paths, many generations</h3><p>This story follows Homo sapiens. The Africa marker is a story anchor, not a single birthplace. Lines show broad directions, not exact roads, origins or the only routes. Earlier dispersals from Africa also occurred. Asia and Australia dates overlap. Europe’s stop describes widespread expansion around 45,000 years ago, not the earliest arrival. The Americas stop uses the age of the White Sands footprints; arrival dates and routes remain under study. The final lines recap these selected journeys, not all migrations, such as the later settlement of the Pacific.</p><h3>Reading & exploring</h3><p>Cantonese stories use bundled prerecorded Cantonese speech, independent of your device’s default Chinese voice. English uses the device speech service; some voices may need a connection. Drag in any direction to rotate. Pinch, scroll or use +/− to zoom up to 32×. Illustrative clouds fade away when zoomed in. The hosted version loads NASA detail tiles on demand, up to the source designated 500 m per pixel. The chosen level depends on the view and device. The 5400 × 2700 global image remains the base map and the self-contained offline file retains that base imagery. These images show country-scale coastlines, mountain ranges and deserts; there are no political borders or street details, and very small countries remain limited. Automatic rotation is off when your system requests reduced motion. Share the single HTML file; no account is needed.</p><h3>Science & image credits</h3><p>Official-source search checked on 26 September 2026. Sources support the corresponding story, with the qualifications above.</p>`;
+function openNotes(){stopPlay();stopSpeech();const zh=lang==='zh';$('notesBody').innerHTML=zh?`<h2>和孩子一起，慢慢看世界。</h2><p>每次選一站，轉一轉地球，讀兩句故事，再問一個問題。沒有分數，也沒有時間限制。</p><h3>這個模型告訴我們甚麼？</h3><p>現代地球使用 NASA 衛星觀測合成影像，不是即時畫面。雲層、日光及遠古地貌是藝術示意；盤古大陸的形狀與分裂並非精確的古地理重建。冰期站保留現代海岸線，沒有重建當時海平面。</p><h3>很久以前，到底有多久？</h3><p>時間軸為了方便小朋友操作，將故事分成等距站點；實際間隔相差很大。日期為約數。海洋站是約 40 億年前的場景，不是宣稱海洋剛在那時形成；有證據顯示液態水更早存在。生命站也不代表已知確切的生命起源時間。</p><h3>人類並不是沿著一條線走遍世界</h3><p>這裡講的是智人（Homo sapiens）。非洲的標記只是故事定位，不代表唯一誕生地點。圖上曲線只提示遷徙的大方向，不是確定的道路、起點或唯一通道。出非洲曾有多次更早的遷徙。亞洲與澳洲站的日期重疊；歐洲站表示約 4.5 萬年前的廣泛擴展，而非最早到達。美洲站採用白沙國家公園足跡的年代；人類到達的時間與路線仍在研究中。最後一站的線條只回顧這幾段故事，不涵蓋太平洋等所有遷徙。</p><h3>朗讀與操作</h3><p>廣東話故事使用已製作好的粵語音檔，不依賴裝置的預設中文聲音。英文朗讀使用裝置語音，部分聲音可能需要網絡。拖曳可上下左右轉動；雙指、滑鼠滾輪或＋／−可縮放至 32 倍。近看會隱藏示意雲層。網上版放大時會按需要載入 NASA 高清分區影像，最高使用官方標示每像素 500 米的資料；實際載入級別會配合視野及裝置。基本全球影像為 5400 × 2700。單一 HTML 離線版保留基本影像。示範區「近看墨爾本」使用 2026-09-08 拍攝的 Copernicus Sentinel-2 真彩色衛星相，每像素 10 米，只涵蓋市中心約 16 × 10 公里；可與舊 500 米影像對照。Contains modified Copernicus Sentinel data 2026。這不是即時影像，也看不到人或車牌。可看國家尺度的海岸線、山脈與沙漠；不是街道地圖，也沒有國界，小國與城市細節有限。開啟系統「減少動態效果」時，地球不會自動旋轉。可以直接分享單一 HTML 檔；不用帳號。</p><h3>科學資料與影像來源</h3><p>官方資料搜尋核對日期：2026-09-26。以下資料支援相應故事；年代與模型限制如上。</p>`:`<h2>A little time to wonder, together.</h2><p>Pick a stop, turn the planet, read a tiny story, and ask one question. No scores. No rush.</p><h3>What are we looking at?</h3><p>Modern Earth uses a NASA satellite-observation mosaic, not a live view. Clouds, lighting and ancient landscapes are artistic illustrations. Pangaea and its breakup are not precise paleogeographic reconstructions. The ice-age scene keeps modern coastlines rather than reconstructing past sea level.</p><h3>A note about deep time</h3><p>Story stops have equal spacing for small hands, but cover very different amounts of time. Dates are approximate. The ocean scene is set around 4 billion years ago, not a claim that oceans first formed then; evidence suggests liquid water existed earlier. The tiny-life stop is not a claim to know the exact origin of life.</p><h3>Many paths, many generations</h3><p>This story follows Homo sapiens. The Africa marker is a story anchor, not a single birthplace. Lines show broad directions, not exact roads, origins or the only routes. Earlier dispersals from Africa also occurred. Asia and Australia dates overlap. Europe’s stop describes widespread expansion around 45,000 years ago, not the earliest arrival. The Americas stop uses the age of the White Sands footprints; arrival dates and routes remain under study. The final lines recap these selected journeys, not all migrations, such as the later settlement of the Pacific.</p><h3>Reading & exploring</h3><p>Cantonese stories use bundled prerecorded Cantonese speech, independent of your device’s default Chinese voice. English uses the device speech service; some voices may need a connection. Drag in any direction to rotate. Pinch, scroll or use +/− to zoom up to 32×. Illustrative clouds fade away when zoomed in. The hosted version loads NASA detail tiles on demand, up to the source designated 500 m per pixel. The chosen level depends on the view and device. The 5400 × 2700 global image remains the base map and the self-contained offline file retains that base imagery. The “Melbourne close-up” demo uses a Copernicus Sentinel-2 true-colour image taken on 2026-09-08 at 10 m per pixel, covering about 16 × 10 km around the city centre, with an old-versus-new 500 m comparison. Contains modified Copernicus Sentinel data 2026. It is not live and cannot show people or number plates. These images show country-scale coastlines, mountain ranges and deserts; there are no political borders or street details, and very small countries remain limited. Automatic rotation is off when your system requests reduced motion. Share the single HTML file; no account is needed.</p><h3>Science & image credits</h3><p>Official-source search checked on 26 September 2026. Sources support the corresponding story, with the qualifications above.</p>`;
  $('notesBody').innerHTML+='<ul>'+sources.map(s=>`<li><a href="${s[3]}" target="_blank" rel="noopener noreferrer">${s[zh?0:1]}</a> — ${s[2]}<br><small>${zh?'抓取':'Checked'} 2026-09-26</small></li>`).join('')+'</ul>';$('notes').showModal();
 }
 $('parents').onclick=openNotes;$('sources').onclick=openNotes;$('closeNotes').onclick=()=>$('notes').close();$('notes').addEventListener('click',e=>{if(e.target===$('notes')){const b=$('notes').getBoundingClientRect();if(e.clientX<b.left||e.clientX>b.right||e.clientY<b.top||e.clientY>b.bottom)$('notes').close()}});
@@ -191,7 +210,7 @@ function initGlobe(){try{gl=$('globe').getContext('webgl',{alpha:true,antialias:
  if(!textureURI.startsWith('__')){const img=new Image();img.onload=()=>{gl.bindTexture(gl.TEXTURE_2D,texture);let source=img;const max=gl.getParameter(gl.MAX_TEXTURE_SIZE);if(img.width>max){source=document.createElement('canvas');source.width=max;source.height=Math.round(img.height*max/img.width);source.getContext('2d').drawImage(img,0,0,source.width,source.height)}gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,source);textureReady=true;makeThumbnails();dirty=true;render(false)};img.onerror=()=>{notify(lang==='zh'?'地球影像未能載入，請重新開啟頁面。':'Earth imagery could not load. Please reopen this page.');$('worldCaption').textContent=lang==='zh'?'地球影像未載入':'EARTH IMAGERY UNAVAILABLE'};img.src=textureURI;}
 }catch(e){console.warn('3D fallback:',e.message);gl=null;$('fallback').hidden=false;$('globe').hidden=true;$('routes').hidden=true;['rotate','zoomIn','zoomOut','reset'].forEach(k=>$(k).disabled=true)}}
 function makeThumbnails(){if(!gl)return;gl.uniform1f(uniforms.hasDetail,0);gl.uniform1f(uniforms.epochBlend,1);const c=$('globe');c.width=110;c.height=110;gl.viewport(0,0,110,110);gl.uniform2f(uniforms.resolution,110,110);gl.uniform1f(uniforms.zoom,1.17);gl.uniform1f(uniforms.pitch,0);gl.uniform1f(uniforms.hasTexture,textureReady?1:0);gl.uniform1i(uniforms.earthMap,0);earth.forEach((e,i)=>{gl.uniform1f(uniforms.rotation,e.angle*Math.PI/180);gl.uniform1f(uniforms.epoch,e.kind);gl.drawArrays(gl.TRIANGLES,0,6);thumbnails[i]=c.toDataURL('image/png')});dirty=true;}
-function drawGlobe(){const close=zoom>1.2;$('globeWrap').classList.toggle('close-up',close);document.querySelector('.world').classList.toggle('terrain-view',close);$('zoomLevel').hidden=!close;$('zoomLevel').textContent=(lang==='zh'?'地形近看 · ':'TERRAIN VIEW · ')+zoom.toFixed(1)+'×';if(!gl)return;const c=$('globe'),size=Math.round(c.clientWidth*Math.min(devicePixelRatio,1.7));if(c.width!==size||c.height!==size){c.width=size;c.height=size;gl.viewport(0,0,size,size)}gl.uniform2f(uniforms.resolution,size,size);gl.uniform1f(uniforms.rotation,rotation);gl.uniform1f(uniforms.pitch,pitch);gl.uniform1f(uniforms.zoom,zoom);gl.uniform1f(uniforms.epoch,data()[index].kind);const morph=typeof currentTransition==='function'?currentTransition():null;gl.uniform1f(uniforms.epochFrom,morph?morph.from:data()[index].kind);gl.uniform1f(uniforms.epochBlend,morph?morph.blend:1);gl.uniform1f(uniforms.hasTexture,textureReady?1:0);gl.uniform1i(uniforms.earthMap,0);if(typeof updateTerrain==='function')updateTerrain();gl.drawArrays(gl.TRIANGLES,0,6)}
+function drawGlobe(){const close=zoom>1.2;$('globeWrap').classList.toggle('close-up',close);document.querySelector('.world').classList.toggle('terrain-view',close);$('zoomLevel').hidden=!close;$('zoomLevel').textContent=(lang==='zh'?'地形近看 · ':'TERRAIN VIEW · ')+zoom.toFixed(1)+'×';if(!gl)return;const c=$('globe'),size=Math.round(c.clientWidth*Math.min(devicePixelRatio,1.7));if(c.width!==size||c.height!==size){c.width=size;c.height=size;gl.viewport(0,0,size,size)}gl.uniform2f(uniforms.resolution,size,size);gl.uniform1f(uniforms.rotation,rotation);gl.uniform1f(uniforms.pitch,pitch);gl.uniform1f(uniforms.zoom,zoom);gl.uniform1f(uniforms.epoch,data()[index].kind);const morph=typeof currentTransition==='function'?currentTransition():null;gl.uniform1f(uniforms.epochFrom,morph?morph.from:data()[index].kind);gl.uniform1f(uniforms.epochBlend,morph?morph.blend:1);gl.uniform1f(uniforms.hasTexture,textureReady?1:0);gl.uniform1i(uniforms.earthMap,0);if(typeof updateTerrain==='function')updateTerrain();if(typeof updateCloseupEntry==='function')updateCloseupEntry();gl.drawArrays(gl.TRIANGLES,0,6)}
 // Geographic points share the same sphere projection as the surface texture.
 const routes=[{step:1,points:[[8,25],[15,39],[26,47],[23,65],[22,78],[15,101]]},{step:2,points:[[15,101],[4,108],[-7,120],[-12,130],[-22,133]]},{step:3,points:[[26,47],[35,40],[43,30],[47,15]]},{step:4,points:[[22,78],[40,110],[57,139],[65,170],[64,195],[52,225],[32,254],[18,265],[-7,285],[-26,294]]}];
 function project(pt,size){const lat=pt[0]*Math.PI/180,lon=pt[1]*Math.PI/180-rotation,r=size*.392*zoom;return{x:size/2+r*Math.cos(lat)*Math.sin(lon),y:size/2-r*(Math.sin(lat)*Math.cos(pitch)-Math.cos(lat)*Math.cos(lon)*Math.sin(pitch)),z:Math.sin(lat)*Math.sin(pitch)+Math.cos(lat)*Math.cos(lon)*Math.cos(pitch)}}
@@ -397,4 +416,139 @@ document.addEventListener('visibilitychange',()=>{if(document.hidden&&film.activ
 ['start','next'].forEach(id=>$(id).addEventListener('click',e=>{if(mode==='earth'&&index<earth.length-1){e.preventDefault();e.stopImmediatePropagation();beginFilm(index+1)}},{capture:true}));
 $('replayTransition').onclick=()=>beginFilm(index);
 renderTransitionButton();
+</script><script>'use strict';
+// Flat close-up viewer: Sentinel-2 10 m tiles for one small area, over the NASA 500 m tile as context.
+// Tiles load on demand from this site's origin; the offline single file disables it.
+const closeupBase=null;
+const closeupPoint=[-37.8136,144.9631];
+// NASA grid-64 tile 57/22 covers 140.625..146.25 E, 33.75..39.375 S.
+const closeupNasa={src:'terrain/64/57/22.jpg',west:140.625,east:146.25,north:-33.75,south:-39.375};
+const closeupMarks=[
+ {name:['市中心','City centre'],point:[-37.8136,144.9631]},
+ {name:['墨爾本板球場','MCG'],point:[-37.8200,144.9834]},
+ {name:['亞伯特公園湖','Albert Park Lake'],point:[-37.8467,144.9701]},
+ {name:['西門大橋','West Gate Bridge'],point:[-37.8292,144.8990]},
+ {name:['菲臘港灣','Port Phillip Bay'],point:[-37.8530,144.9400]}
+];
+const cu={manifest:null,cx:0,cy:0,mpp:16,show:'new',marks:true,cache:new Map(),failed:new Set(),nasa:null,nasaFailed:false,pointers:new Map(),drag:null,pinch:null,raf:0,loaded:0,bytes:0};
+const cuM={lat:111000,lon:88000};
+function cuSetup(m){const lat=((m.bounds.north+m.bounds.south)/2)*Math.PI/180;cuM.lat=111132.92-559.82*Math.cos(2*lat)+1.175*Math.cos(4*lat);cuM.lon=111412.84*Math.cos(lat)-93.5*Math.cos(3*lat)}
+// Local metres east/south of the close-up's north-west corner.
+function cuXY(lat,lon){const b=cu.manifest.bounds;return[(lon-b.west)*cuM.lon,(b.north-lat)*cuM.lat]}
+function cuText(zh,en){return lang==='zh'?zh:en}
+function cuStatus(){
+ const s=$('closeupStatus');if(!cu.manifest){s.textContent=cuText('載入近看資料…','Loading close-up…');return}
+ const res=cu.show==='new'?cuText('新：每像素 10 米','New: 10 m per pixel'):cuText('舊：每像素 500 米','Old: 500 m per pixel');
+ let note='';
+ if(cu.show==='new'&&cu.failed.size)note=cuText(' · 部分 10 米影像未能載入，暫用舊影像','. Some 10 m tiles failed, showing old imagery');
+ else if(cu.nasaFailed)note=cuText(' · 舊影像未能載入','. Old imagery unavailable');
+ s.textContent=res+note;
+}
+function cuLevel(){const dpr=Math.min(devicePixelRatio||1,2),max=cu.manifest.levels.length-1;let z=0;while(z<max&&10*2**(z+1)<=cu.mpp/dpr*1.2)z++;return z}
+function cuTile(z,x,y){
+ const key=z+'/'+x+'_'+y;
+ if(cu.cache.has(key)){const img=cu.cache.get(key);cu.cache.delete(key);cu.cache.set(key,img);return img.complete&&img.naturalWidth?img:null}
+ if(cu.failed.has(key))return null;
+ const img=new Image();img.decoding='async';
+ img.onload=()=>{cu.loaded++;cuDraw()};img.onerror=()=>{cu.cache.delete(key);cu.failed.add(key);cuStatus();cuDraw()};
+ img.src=closeupBase+key+'.jpg';cu.cache.set(key,img);
+ while(cu.cache.size>24)cu.cache.delete(cu.cache.keys().next().value);
+ return null;
+}
+function cuDraw(){if(!cu.raf)cu.raf=requestAnimationFrame(cuRender)}
+function cuRender(){
+ cu.raf=0;const can=$('closeupCanvas');if(!$('closeup').open||!cu.manifest)return;
+ const dpr=Math.min(devicePixelRatio||1,2),w=can.clientWidth,h=can.clientHeight;
+ if(can.width!==Math.round(w*dpr)||can.height!==Math.round(h*dpr)){can.width=Math.round(w*dpr);can.height=Math.round(h*dpr)}
+ const ctx=can.getContext('2d',{alpha:false});ctx.setTransform(dpr,0,0,dpr,0,0);ctx.fillStyle='#0b2130';ctx.fillRect(0,0,w,h);
+ const toScreen=(mx,my)=>[w/2+(mx-cu.cx)/cu.mpp,h/2+(my-cu.cy)/cu.mpp];
+ // Old NASA context, smoothed exactly as a browser enlarges it.
+ if(cu.nasa&&cu.nasa.complete&&cu.nasa.naturalWidth){
+  const n=closeupNasa,[x0,y0]=toScreen(...cuXY(n.north,n.west)),[x1,y1]=toScreen(...cuXY(n.south,n.east));
+  ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality='high';ctx.drawImage(cu.nasa,x0,y0,x1-x0,y1-y0);
+ }
+ if(cu.show==='new'){
+  const m=cu.manifest,b=m.bounds,target=cuLevel(),full=m.levels[0];
+  const [rx0,ry0]=toScreen(0,0),[rx1,ry1]=toScreen(...cuXY(b.south,b.east));
+  // Draw coarse levels first so something useful shows while finer tiles arrive.
+  for(let z=m.levels.length-1;z>=target;z--){
+   const L=m.levels[z],sx=(rx1-rx0)/L.width,sy=(ry1-ry0)/L.height,t=m.tileSize;
+   const c0=Math.max(0,Math.floor((0-rx0)/sx/t)),c1=Math.min(L.cols-1,Math.floor((w-rx0)/sx/t));
+   const r0=Math.max(0,Math.floor((0-ry0)/sy/t)),r1=Math.min(L.rows-1,Math.floor((h-ry0)/sy/t));
+   for(let y=r0;y<=r1;y++)for(let x=c0;x<=c1;x++){
+    const img=z===target?cuTile(z,x,y):(cu.cache.get(z+'/'+x+'_'+y)||null);
+    if(img&&img.complete&&img.naturalWidth){ctx.imageSmoothingEnabled=sx<1||z>0;ctx.drawImage(img,rx0+x*t*sx,ry0+y*t*sy,img.naturalWidth*sx+.5,img.naturalHeight*sy+.5)}
+   }
+  }
+  // Keep coarse levels warm so zooming out never flashes blank.
+  const top=m.levels.length-1;cuTile(top,0,0);
+  ctx.strokeStyle='#b9ecc9cc';ctx.lineWidth=2;ctx.setLineDash([8,6]);ctx.strokeRect(rx0,ry0,rx1-rx0,ry1-ry0);ctx.setLineDash([]);
+ }
+ if(cu.marks){
+  ctx.font='700 13px ui-rounded,"PingFang TC",sans-serif';ctx.textBaseline='middle';
+  for(const mk of closeupMarks){const [x,y]=toScreen(...cuXY(...mk.point));if(x<-60||y<-20||x>w+60||y>h+20)continue;
+   const label=choose(mk.name),tw=ctx.measureText(label).width;
+   ctx.fillStyle='#ffd166';ctx.beginPath();ctx.arc(x,y,6,0,Math.PI*2);ctx.fill();ctx.strokeStyle='#07121b';ctx.lineWidth=2;ctx.stroke();
+   ctx.fillStyle='#07121bd9';ctx.fillRect(x+10,y-12,tw+14,24);ctx.fillStyle='#fff7df';ctx.fillText(label,x+17,y)}
+ }
+ // Scale bar: pick 100 m, 500 m, 1 km, 2 km, 5 km or 10 km to fit about 120 px.
+ const choices=[100,200,500,1000,2000,5000,10000,20000,50000];let bar=choices[0];for(const c of choices)if(c/cu.mpp<=140)bar=c;
+ const px=bar/cu.mpp,label=bar>=1000?bar/1000+cuText(' 公里',' km'):bar+cuText(' 米',' m');
+ ctx.fillStyle='#07121bcc';ctx.fillRect(12,h-44,px+20,32);ctx.fillStyle='#fff';ctx.fillRect(22,h-22,px,4);ctx.fillRect(22,h-28,2,10);ctx.fillRect(20+px,h-28,2,10);
+ ctx.font='700 12px ui-rounded,sans-serif';ctx.fillText(label,24,h-34);
+ $('closeupZoomText').textContent=cuText('畫面每點約 ','About ')+(cu.mpp>=10?Math.round(cu.mpp):cu.mpp.toFixed(1))+cuText(' 米',' m per point');
+}
+function cuClamp(){const b=cu.manifest.bounds,[ex,ey]=cuXY(b.south,b.east),pad=30000;cu.mpp=Math.max(4,Math.min(200,cu.mpp));cu.cx=Math.max(-pad,Math.min(ex+pad,cu.cx));cu.cy=Math.max(-pad,Math.min(ey+pad,cu.cy))}
+function cuZoomAt(f,sx,sy){const can=$('closeupCanvas'),w=can.clientWidth,h=can.clientHeight;const mx=cu.cx+(sx-w/2)*cu.mpp,my=cu.cy+(sy-h/2)*cu.mpp;const before=cu.mpp;cu.mpp/=f;cuClamp();const k=cu.mpp/before;cu.cx=mx-(mx-cu.cx)*k;cu.cy=my-(my-cu.cy)*k;cuClamp();cuDraw()}
+function cuFit(){const can=$('closeupCanvas'),b=cu.manifest.bounds,[ex,ey]=cuXY(b.south,b.east);cu.cx=ex/2;cu.cy=ey/2;cu.mpp=Math.max(ex/Math.max(200,can.clientWidth-24),ey/Math.max(200,can.clientHeight-24));cuClamp();cuDraw()}
+function cuLabels(){
+ $('closeupTitle').textContent=cuText('近看墨爾本','Close-up: Melbourne');
+ $('closeupNew').textContent=cuText('新 10 米','New 10 m');$('closeupOld').textContent=cuText('舊 500 米','Old 500 m');
+ $('closeupMarks').textContent=cuText('地標','Labels');$('closeupFit').setAttribute('aria-label',cuText('看全個範圍','Show whole area'));
+ $('closeupIn').setAttribute('aria-label',cuText('放大','Zoom in'));$('closeupOut').setAttribute('aria-label',cuText('縮小','Zoom out'));$('closeupClose').setAttribute('aria-label',cuText('關閉','Close'));
+ const m=cu.manifest;$('closeupCredit').textContent=m?cuText(`Sentinel-2 衛星相，${m.date} 拍攝；${m.credit}。舊圖：NASA Blue Marble 2004。不是即時影像。`,`Sentinel-2 image taken ${m.date}. ${m.credit}. Old image: NASA Blue Marble 2004. Not live.`):'';
+ $('closeupNew').setAttribute('aria-pressed',cu.show==='new');$('closeupOld').setAttribute('aria-pressed',cu.show==='old');$('closeupMarks').setAttribute('aria-pressed',cu.marks);
+ cuStatus();
+}
+async function openCloseup(){
+ stopPlay();stopSpeech();spinning=false;const d=$('closeup');cu.show='new';cu.failed.clear();cu.nasaFailed=false;
+ d.showModal();cuLabels();
+ if(!cu.nasa){cu.nasa=new Image();cu.nasa.onload=cuDraw;cu.nasa.onerror=()=>{cu.nasaFailed=true;cuStatus();cuDraw()};cu.nasa.src=closeupNasa.src}
+ if(!cu.manifest){try{const r=await fetch(closeupBase+'manifest.json');if(!r.ok)throw Error(r.status);cu.manifest=await r.json();cuSetup(cu.manifest)}catch(e){$('closeupStatus').textContent=cuText('近看資料未能載入，請稍後再試。','The close-up could not load. Please try again later.');return}}
+ cuLabels();cuFit();$('closeupIn').focus({preventScroll:true});
+}
+function closeCloseup(){$('closeup').close();dirty=true}
+function updateCloseupEntry(){
+ const btn=$('closeupEntry');if(!btn)return;
+ const film=document.body.classList.contains('film-open');
+ const ok=!!closeupBase&&location.protocol!=='file:'&&!film&&!(typeof gameActive!=='undefined'&&gameActive)&&data()[index].kind>=5&&zoom>=2.4;
+ if(!ok){btn.hidden=true;return}
+ const size=$('routes').clientWidth,p=project(closeupPoint,size);
+ if(p.z<.3||p.x<0||p.y<0||p.x>size||p.y>size){btn.hidden=true;return}
+ btn.hidden=false;btn.style.left=(p.x/size*100)+'%';btn.style.top=(p.y/size*100)+'%';
+ btn.textContent=cuText('🔍 近看墨爾本','🔍 Melbourne close-up');
+}
+(function initCloseup(){
+ const can=$('closeupCanvas');if(!can)return;
+ $('closeupEntry').onclick=openCloseup;$('closeupClose').onclick=closeCloseup;
+ $('closeup').addEventListener('close',()=>{cu.pointers.clear();cu.drag=cu.pinch=null;dirty=true});
+ $('closeupIn').onclick=()=>cuZoomAt(1.6,can.clientWidth/2,can.clientHeight/2);
+ $('closeupOut').onclick=()=>cuZoomAt(1/1.6,can.clientWidth/2,can.clientHeight/2);
+ $('closeupFit').onclick=cuFit;
+ $('closeupNew').onclick=()=>{cu.show='new';cuLabels();cuDraw()};$('closeupOld').onclick=()=>{cu.show='old';cuLabels();cuDraw()};
+ $('closeupMarks').onclick=()=>{cu.marks=!cu.marks;cuLabels();cuDraw()};
+ const pos=e=>{const r=can.getBoundingClientRect();return[e.clientX-r.left,e.clientY-r.top]};
+ const spread=()=>{const [a,b]=[...cu.pointers.values()];return{d:Math.hypot(a[0]-b[0],a[1]-b[1]),x:(a[0]+b[0])/2,y:(a[1]+b[1])/2}};
+ can.addEventListener('pointerdown',e=>{if(!cu.manifest)return;try{can.setPointerCapture(e.pointerId)}catch(err){}cu.pointers.set(e.pointerId,pos(e));if(cu.pointers.size===1){const [x,y]=pos(e);cu.drag={x,y,cx:cu.cx,cy:cu.cy}}else if(cu.pointers.size===2){const s=spread();cu.pinch={d:s.d,x:s.x,y:s.y,mpp:cu.mpp,cx:cu.cx,cy:cu.cy};cu.drag=null}});
+ can.addEventListener('pointermove',e=>{if(!cu.pointers.has(e.pointerId))return;cu.pointers.set(e.pointerId,pos(e));
+  if(cu.pinch&&cu.pointers.size===2){const s=spread(),w=can.clientWidth,h=can.clientHeight,p=cu.pinch;
+   const mx=p.cx+(p.x-w/2)*p.mpp,my=p.cy+(p.y-h/2)*p.mpp;cu.mpp=p.mpp*p.d/Math.max(1,s.d);cuClamp();cu.cx=mx-(s.x-w/2)*cu.mpp;cu.cy=my-(s.y-h/2)*cu.mpp;cuClamp();cuDraw()}
+  else if(cu.drag){const [x,y]=pos(e);cu.cx=cu.drag.cx-(x-cu.drag.x)*cu.mpp;cu.cy=cu.drag.cy-(y-cu.drag.y)*cu.mpp;cuClamp();cuDraw()}});
+ const end=e=>{cu.pointers.delete(e.pointerId);if(cu.pointers.size<2)cu.pinch=null;if(cu.pointers.size===1){const [x,y]=[...cu.pointers.values()][0];cu.drag={x,y,cx:cu.cx,cy:cu.cy}}else if(!cu.pointers.size)cu.drag=null};
+ can.addEventListener('pointerup',end);can.addEventListener('pointercancel',end);
+ can.addEventListener('wheel',e=>{e.preventDefault();if(!cu.manifest)return;const [x,y]=pos(e);cuZoomAt(Math.exp(-e.deltaY*.002),x,y)},{passive:false});
+ can.addEventListener('keydown',e=>{if(!cu.manifest)return;const step=60*cu.mpp;const k={ArrowLeft:[-step,0],ArrowRight:[step,0],ArrowUp:[0,-step],ArrowDown:[0,step]}[e.key];
+  if(k){e.preventDefault();cu.cx+=k[0];cu.cy+=k[1];cuClamp();cuDraw()}else if(e.key==='+'||e.key==='='){e.preventDefault();$('closeupIn').click()}else if(e.key==='-'){e.preventDefault();$('closeupOut').click()}});
+ window.addEventListener('resize',()=>{if($('closeup').open)cuDraw()});
+})();
 </script></body></html>

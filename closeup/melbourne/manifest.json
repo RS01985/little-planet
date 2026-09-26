@@ -1,0 +1,41 @@
+{
+  "name": [
+    "墨爾本市中心",
+    "Central Melbourne"
+  ],
+  "bounds": {
+    "west": 144.875,
+    "south": -37.875,
+    "east": 145.055,
+    "north": -37.785
+  },
+  "metresPerPixel": 10,
+  "tileSize": 512,
+  "levels": [
+    {
+      "width": 1585,
+      "height": 999,
+      "cols": 4,
+      "rows": 2
+    },
+    {
+      "width": 792,
+      "height": 499,
+      "cols": 2,
+      "rows": 1
+    },
+    {
+      "width": 396,
+      "height": 249,
+      "cols": 1,
+      "rows": 1
+    }
+  ],
+  "tiles": 11,
+  "bytes": 705204,
+  "date": "2026-09-08",
+  "scene": "S2C_T55HCU_20260908T001553_L2A",
+  "source": "Copernicus Sentinel-2 L2A true colour (TCI), Element 84 Earth Search on AWS Open Data",
+  "credit": "Contains modified Copernicus Sentinel data 2026",
+  "reprojection": "UTM 55S to lat/lon grid, 64-px mesh, max error 0.0006 source px"
+}

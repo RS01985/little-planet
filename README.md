@@ -58,3 +58,11 @@ NASA Blue Marble Next Generation January 2004 A1–D2 images (each 21600 × 2160
 ## Thirty-second Earth transitions
 
 The six adjacent Earth-history transitions each have a 30-second mini cinema. Use the large next-stop button or the next arrow; direct timeline selection still jumps straight to a story. A replay button is available from the second stop onward. The live WebGL planet blends between illustrative epochs, with six themed CSS 3D particle scenes. Each Cantonese track has three ten-second sections and synchronized captions. Pause, resume, replay, skip, Escape and reduced-motion settings are supported. These are narrative illustrations, not physical simulations or precise paleogeographic reconstructions.
+
+## Melbourne 10 m close-up (demo)
+
+When the modern-Earth globe is zoomed to about 2.4× or more with Melbourne facing the viewer, a “🔍 近看墨爾本” button opens a flat close-up. It covers about 16 × 10 km around central Melbourne at 10 m per pixel. The globe’s 32× limit is about 0.85 km per screen point, so 10 m detail needs this separate view rather than more globe zoom. A switch compares the new 10 m image with the old 500 m NASA tile at the same place and scale; five landmark labels can be hidden. One finger pans, two fingers pinch (about 4–200 m per screen point), and + / − / fit buttons work too.
+
+Imagery: Copernicus Sentinel-2 L2A true-colour (TCI) scene `S2C_T55HCU_20260908T001553_L2A`, taken 2026-09-08, 10 m per pixel, from Element 84 Earth Search on AWS Open Data (free, no account). `tools/build-sentinel.py` reads only the four needed internal tiles (9.0 MB) with HTTP range requests, reprojects UTM 55S to the site’s lat/lon grid (64-pixel mesh), and writes 11 JPEG tiles (0.71 MB) in `closeup/melbourne/`. The raw crop stays in the ignored `tools/_source/` folder. Opening the whole area on a 2× screen downloads about 0.82 MB including the NASA context tile; closer views need fewer tiles. If a 10 m tile fails, the old 500 m image stays visible with a notice. The offline single file disables the close-up.
+
+Credit: Contains modified Copernicus Sentinel data 2026. [Legal notice](https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice), checked 2026-09-26. Not live imagery; people and vehicles are not identifiable at 10 m.
