@@ -1,0 +1,14 @@
+{
+  "tileSize": 1350,
+  "grids": [
+    8,
+    16,
+    32,
+    64
+  ],
+  "highestResolution": "500 m per pixel at equator (NASA designation)",
+  "source": "NASA Blue Marble Next Generation, January 2004",
+  "tiles": 2720,
+  "bytes": 273262824,
+  "jpegQuality": 80
+}

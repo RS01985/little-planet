@@ -17,7 +17,7 @@ Open the published GitHub Pages site in Safari on iPad, or any modern browser. U
 
 Seven Earth-history stops, six selected human-dispersal stops, a parent guide, and official-source references checked on 2026-09-26. No accounts, analytics, ads, package downloads or build dependencies are required to run the site.
 
-The app is plain HTML, CSS and JavaScript. Native WebGL renders the planet, with a Canvas overlay for geographical routes. Zooming shows broad landforms and coastlines, not street-level detail or political borders. Small countries and city detail are limited by the global source imagery. At 16–32×, existing pixels are magnified; this does not add higher-resolution detail. Modern satellite imagery comes from NASA’s Blue Marble collection. Ancient landscapes, cloud effects, lighting and migration lines are illustrative.
+The app is plain HTML, CSS and JavaScript. Native WebGL renders the planet, with a Canvas overlay for geographical routes. Zooming shows broad landforms and coastlines, not street-level detail or political borders. Small countries and city detail are limited by the global source imagery. The hosted site loads a local NASA image pyramid on demand, up to the original 500 m/pixel source. A bounded texture window and small image cache limit device memory use; lower levels are used for wider views. The single-file offline edition retains only the base map. Modern satellite imagery comes from NASA’s Blue Marble collection. Ancient landscapes, cloud effects, lighting and migration lines are illustrative.
 
 ## Scientific scope
 
@@ -50,3 +50,7 @@ The geography explorer uses the seven-continent / five-ocean naming convention d
 Six gentle find-the-place missions with large illustrated globe pins and matching answer buttons. Tap the matching picture, collect one star per mission, and try again without time limits or penalties. Cantonese prompts and feedback are bundled recordings. Progress lasts for the current game only; nothing is uploaded or tracked. The pins mark example locations, not boundaries or complete habitat ranges.
 
 Collecting all six stars reveals a CSS 3D rainbow celebration. The rainbow and stars become still when the device requests reduced motion. No flashing effects or timed dismissal are used.
+
+## On-demand terrain imagery
+
+NASA Blue Marble Next Generation January 2004 A1–D2 images (each 21600 × 21600) are the source for the `terrain/` JPEG pyramid. Official source designation: 500 m/pixel. Source page and original image URLs were checked on 2026-09-26. Original images stay outside the published repository; only locally generated 1350-pixel tiles are served. Detail downloads start at 3× for modern imagery. The viewer wraps at the date line, falls back to the base map if a tile fails, and disables detail requests in the standalone offline file. Imagery is a historical satellite mosaic, not live or street-level imagery.
