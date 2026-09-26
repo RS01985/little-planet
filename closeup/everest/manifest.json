@@ -1,0 +1,42 @@
+{
+  "name": [
+    "珠穆朗瑪峰",
+    "Mount Everest"
+  ],
+  "bounds": {
+    "west": 86.84,
+    "south": 27.945,
+    "east": 87.01,
+    "north": 28.065
+  },
+  "metresPerPixel": 10,
+  "tileSize": 512,
+  "levels": [
+    {
+      "width": 1672,
+      "height": 1330,
+      "cols": 4,
+      "rows": 3
+    },
+    {
+      "width": 836,
+      "height": 665,
+      "cols": 2,
+      "rows": 2
+    },
+    {
+      "width": 418,
+      "height": 332,
+      "cols": 1,
+      "rows": 1
+    }
+  ],
+  "tiles": 17,
+  "bytes": 679249,
+  "date": "2025-01-31",
+  "scene": "S2B_T45RVM_20250131T045754_L2A",
+  "source": "Copernicus Sentinel-2 L2A true colour (TCI), Element 84 Earth Search on AWS Open Data",
+  "credit": "Contains modified Copernicus Sentinel data 2025",
+  "reprojection": "UTM 45N to lat/lon grid, 64-px mesh, max error 0.0004 source px",
+  "missingData": 0.00018
+}

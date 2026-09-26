@@ -63,10 +63,21 @@ Each of the six moves between adjacent Earth-history stops plays a narrated stor
 
 All Cantonese audio is generated with the built-in macOS Sinji voice by `tools/build-audio.py` (no downloads): speaking rate 140 plus short pauses after commas and full stops, so stories run about 20–24 s instead of about 18 s. The tool writes each film's line start times into `transitions.js`, refuses film scripts that do not match the captions, refuses game scripts that do not contain their mission question, and fails on empty output. `tools/build-single-file.py` stops if any audio file is not embedded in the offline edition.
 
-## Melbourne 10 m close-up (demo)
+## 10 m close-up places
 
-When the modern-Earth globe is zoomed to about 2.4× or more with Melbourne facing the viewer, a “🔍 近看墨爾本” button opens a flat close-up. It covers about 16 × 10 km around central Melbourne at 10 m per pixel. The globe’s 32× limit is about 0.85 km per screen point, so 10 m detail needs this separate view rather than more globe zoom. A switch compares the new 10 m image with the old 500 m NASA tile at the same place and scale; five landmark labels can be hidden. One finger pans, two fingers pinch (about 4–200 m per screen point), and + / − / fit buttons work too.
+Eight places can be explored at 10 m per pixel: tap a place pin on the modern-Earth globe (pins appear from about 1.6× zoom, icon-only below 3×) or the 🔍 button in the globe toolbar. The close-up opens in the globe’s own area. The globe’s 32× limit is about 0.85 km per screen point, so 10 m detail needs this flat view rather than more globe zoom. A switch compares the new 10 m image with the old 500 m NASA tiles at the same place and scale; landmark labels (checked against the images) can be hidden. One finger pans, two fingers pinch (about 4–200 m per screen point), and + / − / fit buttons work too.
 
-Imagery: Copernicus Sentinel-2 L2A true-colour (TCI) scene `S2C_T55HCU_20260908T001553_L2A`, taken 2026-09-08, 10 m per pixel, from Element 84 Earth Search on AWS Open Data (free, no account). `tools/build-sentinel.py` reads only the four needed internal tiles (9.0 MB) with HTTP range requests, reprojects UTM 55S to the site’s lat/lon grid (64-pixel mesh), and writes 11 JPEG tiles (0.71 MB) in `closeup/melbourne/`. The raw crop stays in the ignored `tools/_source/` folder. Opening the whole area on a 2× screen downloads about 0.82 MB including the NASA context tile; closer views need fewer tiles. If a 10 m tile fails, the old 500 m image stays visible with a notice. The offline single file disables the close-up.
+| Place | Image date | Sentinel-2 scene | Published |
+|:--|:--|:--|:--|
+| Victoria Harbour, Hong Kong | 2026-01-13 | `S2B_T49QHE_20260113T030907_L2A` | 17 tiles, 0.64 MB |
+| Sydney Harbour | 2026-09-20 | `S2B_T56HLH_20260920T000410_L2A` | 17 tiles, 0.79 MB |
+| Central Melbourne | 2026-09-08 | `S2C_T55HCU_20260908T001553_L2A` | 11 tiles, 0.71 MB |
+| Tokyo Bay | 2026-01-16 | `S2B_T54SUE_20260116T013553_L2A` | 17 tiles, 0.87 MB |
+| Pyramids of Giza | 2026-09-16 | `S2A_T36RUU_20260916T083643_L2A` | 17 tiles, 0.87 MB |
+| Grand Canyon | 2026-07-10 | `S2C_T12SUE_20260710T181750_L2A` | 17 tiles, 0.80 MB |
+| Mount Everest | 2025-01-31 | `S2B_T45RVM_20250131T045754_L2A` | 17 tiles, 0.68 MB |
+| Meeting of Waters, Amazon | 2026-08-26 | `S2A_T20MRB_20260826T142159_L2A` | 17 tiles, 0.56 MB |
 
-Credit: Contains modified Copernicus Sentinel data 2026. [Legal notice](https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice), checked 2026-09-26. Not live imagery; people and vehicles are not identifiable at 10 m.
+`tools/build-sentinel.py` reads only the needed internal tiles of each approved scene with HTTP range requests (88 MB in total for the seven places added on 2026-09-26, including one replaced Everest scene; Melbourne 9 MB), reprojects UTM to the site’s lat/lon grid (64-pixel mesh), refuses crops with more than 0.5% missing data, and writes JPEG tiles to `closeup/<place>/`. Raw crops stay in the ignored `tools/_source/` folder. Each place loads only when opened (about 0.5–0.9 MB for a whole-area view). If a 10 m tile fails, the old 500 m image stays visible with a notice. The offline single file disables close-ups. Global 10 m coverage is not bundled: at this site’s compression it would be roughly 660 TB, far beyond the 1 GB GitHub Pages limit.
+
+Credit: Contains modified Copernicus Sentinel data 2025–2026. [Legal notice](https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice), checked 2026-09-26. Not live imagery; people and vehicles are not identifiable at 10 m. Everest uses a low-snow January scene; snow can still appear very bright.

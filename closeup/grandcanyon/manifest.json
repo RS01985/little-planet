@@ -1,0 +1,42 @@
+{
+  "name": [
+    "大峽谷",
+    "Grand Canyon"
+  ],
+  "bounds": {
+    "west": -112.2,
+    "south": 36.0,
+    "east": -112.02,
+    "north": 36.12
+  },
+  "metresPerPixel": 10,
+  "tileSize": 512,
+  "levels": [
+    {
+      "width": 1622,
+      "height": 1332,
+      "cols": 4,
+      "rows": 3
+    },
+    {
+      "width": 811,
+      "height": 666,
+      "cols": 2,
+      "rows": 2
+    },
+    {
+      "width": 405,
+      "height": 333,
+      "cols": 1,
+      "rows": 1
+    }
+  ],
+  "tiles": 17,
+  "bytes": 795667,
+  "date": "2026-07-10",
+  "scene": "S2C_T12SUE_20260710T181750_L2A",
+  "source": "Copernicus Sentinel-2 L2A true colour (TCI), Element 84 Earth Search on AWS Open Data",
+  "credit": "Contains modified Copernicus Sentinel data 2026",
+  "reprojection": "UTM 12N to lat/lon grid, 64-px mesh, max error 0.0006 source px",
+  "missingData": 0.0
+}

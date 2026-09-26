@@ -25,24 +25,6 @@ html{overflow-x:hidden;max-width:100%}.app{width:100%}.world{overflow:hidden}.mo
 
 body.film-open{overflow:hidden}
 
-.closeup-entry{position:absolute;transform:translate(-50%,-50%);z-index:5;min-height:48px;border-radius:26px;background:#ffd166;color:#23180a;font-size:14px;font-weight:800;padding:10px 18px;box-shadow:0 0 0 6px #ffd16633,0 8px 30px #000a;white-space:nowrap;animation:cuPulse 2.2s ease-in-out infinite}
-@keyframes cuPulse{50%{box-shadow:0 0 0 14px #ffd16611,0 8px 30px #000a}}
-@media(prefers-reduced-motion:reduce){.closeup-entry{animation:none}}
-dialog.closeup{padding:0;width:100vw;height:100dvh;max-width:none;max-height:none;border:0;border-radius:0;background:#07121b;overflow:hidden;line-height:1.4}
-dialog.closeup[open]{display:grid;grid-template-rows:auto 1fr auto}
-.closeup-bar{display:flex;align-items:center;gap:10px;padding:12px 70px 12px 16px;flex-wrap:wrap;position:relative}
-.closeup-bar h2{margin:0;font-size:20px}
-.closeup-bar .close{top:8px;right:12px}
-.closeup-switch{display:flex;background:#132936;border-radius:26px;padding:4px}
-.closeup-switch button,.closeup-chip{min-height:44px;padding:0 16px;border-radius:22px;font-size:14px;font-weight:750;color:#cfe0e6;background:transparent}
-.closeup-switch button[aria-pressed="true"]{background:var(--mint);color:#0b2130}
-.closeup-chip{border:1px solid #3d5b6e}.closeup-chip[aria-pressed="true"]{background:#ffd16622;border-color:#ffd166;color:#ffe6a6}
-#closeupCanvas{width:100%;height:100%;display:block;touch-action:none;cursor:grab;min-height:0}
-.closeup-tools{position:absolute;right:16px;bottom:88px;display:flex;flex-direction:column;gap:10px}
-.closeup-tools button{width:54px;height:54px;border-radius:50%;background:#132936ee;color:#fff;font-size:26px;box-shadow:0 4px 20px #0008}
-.closeup-info{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline;padding:10px 16px calc(10px + env(safe-area-inset-bottom));font-size:13px;color:#c3d2d9;background:#07121b}
-#closeupZoomText{color:var(--mint);font-weight:750}#closeupCredit{flex-basis:100%;font-size:11px;color:#8ea3ae}
-@media(max-width:560px){.closeup-bar h2{font-size:17px;flex-basis:100%}.closeup-switch button,.closeup-chip{padding:0 12px;font-size:13px}.closeup-tools{bottom:104px}}
 
 #filmScene{position:absolute;inset:0;width:100%;height:100%;z-index:2;border-radius:18px;pointer-events:none}
 .film-theatre .film-orbit{z-index:3}
@@ -122,3 +104,33 @@ dialog.closeup[open]{display:grid;grid-template-rows:auto 1fr auto}
 @keyframes rbReveal{from{clip-path:inset(0 100% 50% 0)}to{clip-path:inset(0 0 50% 0)}}
 @keyframes rbShine{0%{background-position:120% 0}60%,100%{background-position:-20% 0}}
 @media(prefers-reduced-motion:reduce){.rb-stage .rb-bow,.rb-stage.play .rb-bow,.rb-stage.play .rb-shine{animation:none!important;clip-path:inset(0 0 50% 0)}.rb-stage .rb-storm,.rb-stage.play .rb-storm{animation:none;opacity:0}.rb-rain,.rb-mist i{display:none}.rb-stage .rb-sunlight,.rb-stage.play .rb-sunlight{animation:none;opacity:1}}
+
+.world.closeup-on .globe-wrap,.world.closeup-on .globe-toolbar,.world.closeup-on .orbit,.world.closeup-on .world-caption,.world.closeup-on .zoom-level{visibility:hidden}
+.closeup{position:absolute;inset:0;z-index:7;display:grid;grid-template-rows:auto 1fr auto;border-radius:22px;overflow:hidden;background:#07121b;box-shadow:0 18px 60px #0009;line-height:1.4}
+.closeup[hidden]{display:none}
+.closeup-bar{display:flex;align-items:center;gap:8px;padding:10px 60px 10px 12px;flex-wrap:wrap;position:relative;background:#0b1c27}
+.closeup-bar h2{margin:0;font-size:18px;flex-basis:100%}
+.closeup-bar .close{top:8px;right:10px}
+.closeup-switch{display:flex;background:#132936;border-radius:26px;padding:4px}
+.closeup-switch button,.closeup-chip{min-height:44px;padding:0 14px;border-radius:22px;font-size:13px;font-weight:750;color:#cfe0e6;background:transparent}
+.closeup-switch button[aria-pressed="true"]{background:var(--mint);color:#0b2130}
+.closeup-chip{border:1px solid #3d5b6e}.closeup-chip[aria-pressed="true"]{background:#ffd16622;border-color:#ffd166;color:#ffe6a6}
+.closeup #closeupCanvas{width:100%;height:100%;display:block;touch-action:none;cursor:grab;min-height:0}
+.closeup.picking #closeupCanvas,.closeup.picking .closeup-tools,.closeup.picking .closeup-switch,.closeup.picking #closeupMarks,.closeup.picking #closeupPlaces{display:none}
+.closeup-picker{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;padding:14px;align-content:start;overflow:auto}
+.closeup-picker[hidden]{display:none}
+.closeup-picker button{min-height:92px;border-radius:18px;background:#17313d;border:1px solid #3d5b65;font-size:14px;font-weight:750;color:#eaf4ef;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:10px}
+.closeup-picker button span{font-size:34px}
+.closeup-tools{position:absolute;right:12px;bottom:84px;display:flex;flex-direction:column;gap:8px}
+.closeup-tools button{width:50px;height:50px;border-radius:50%;background:#132936ee;color:#fff;font-size:24px;box-shadow:0 4px 20px #0008}
+.closeup-info{display:flex;flex-wrap:wrap;gap:3px 12px;align-items:baseline;padding:8px 12px;font-size:12px;color:#c3d2d9;background:#0b1c27}
+#closeupZoomText{color:var(--mint);font-weight:750}#closeupCredit{flex-basis:100%;font-size:10px;color:#8ea3ae}
+#closeupPins{position:absolute;inset:0;pointer-events:none}
+.closeup-pin{position:absolute;transform:translate(-50%,-100%);pointer-events:auto;display:flex;align-items:center;gap:4px;min-height:40px;padding:4px 10px 4px 6px;border-radius:22px;background:#fff3c4;color:#23180a;border:2px solid #fff;box-shadow:0 4px 16px #0008;white-space:nowrap;touch-action:manipulation}
+.closeup-pin span{font-size:22px}.closeup-pin small{font-size:11px;font-weight:800}
+.closeup-pin:after{content:"";position:absolute;left:50%;bottom:-6px;width:10px;height:10px;background:#fff3c4;transform:translateX(-50%) rotate(45deg);border-right:2px solid #fff;border-bottom:2px solid #fff}
+.closeup-list{font-size:18px}
+.closeup.picking .closeup-info{visibility:hidden}
+#closeupPins.compact .closeup-pin small{display:none}
+#closeupPins.compact .closeup-pin{padding:4px 7px;min-width:44px;min-height:44px;justify-content:center}
+.closeup-pin.nudged:after{display:none}

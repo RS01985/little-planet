@@ -4,7 +4,7 @@ root=Path(__file__).resolve().parent.parent
 out=root
 html=(out/'index.html').read_text()
 css=(out/'styles.css').read_text()
-js=(out/'app.js').read_text()+'\n/*GAME_SCRIPT_BOUNDARY*/\n'+(out/'terrain.js').read_text().replace("const terrainBase='terrain/';","const terrainBase=null;")+'\n/*GAME_SCRIPT_BOUNDARY*/\n'+(out/'rainbow.js').read_text()+'\n/*GAME_SCRIPT_BOUNDARY*/\n'+(out/'game.js').read_text()+'\n/*GAME_SCRIPT_BOUNDARY*/\n'+(out/'filmscenes.js').read_text()+'\n/*GAME_SCRIPT_BOUNDARY*/\n'+(out/'transitions.js').read_text()+'\n/*GAME_SCRIPT_BOUNDARY*/\n'+(out/'closeup.js').read_text().replace("const closeupBase='closeup/melbourne/';","const closeupBase=null;")
+js=(out/'app.js').read_text()+'\n/*GAME_SCRIPT_BOUNDARY*/\n'+(out/'terrain.js').read_text().replace("const terrainBase='terrain/';","const terrainBase=null;")+'\n/*GAME_SCRIPT_BOUNDARY*/\n'+(out/'rainbow.js').read_text()+'\n/*GAME_SCRIPT_BOUNDARY*/\n'+(out/'game.js').read_text()+'\n/*GAME_SCRIPT_BOUNDARY*/\n'+(out/'filmscenes.js').read_text()+'\n/*GAME_SCRIPT_BOUNDARY*/\n'+(out/'transitions.js').read_text()+'\n/*GAME_SCRIPT_BOUNDARY*/\n'+(out/'closeup.js').read_text().replace("const closeupBase='closeup/';","const closeupBase=null;")
 texture=out/'earth-hd.jpg'
 if texture.exists():
     uri='data:image/jpeg;base64,'+base64.b64encode(texture.read_bytes()).decode()
