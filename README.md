@@ -7,9 +7,9 @@ An interactive Earth time machine for young children and the grown-ups exploring
 Open the published GitHub Pages site in Safari on iPad, or any modern browser. Use Safari’s Share menu → Add to Home Screen for a home-screen shortcut. A hosted link is more reliable on iPad than opening an HTML attachment in Files.
 
 - One finger: turn the globe.
-- Two fingers: pinch to zoom; + / − buttons also work.
+- Two fingers: pinch to zoom up to 8×; + / − buttons and the mouse wheel also work. Close-up mode hides illustrative clouds, and dragging pans the view in two directions.
 - Tap a story stop, or use the large next-stop button.
-- Read to me uses the device’s speech service. Voice availability varies; some voices require a network connection.
+- Cantonese narration uses 13 bundled M4A recordings, synthesized locally with the already-installed macOS Sinji Cantonese voice from original Cantonese scripts. It does not fall back to Mandarin or require an iPad voice download. English narration uses the device’s speech service.
 - Arrow keys rotate the focused globe. The range control selects a story stop.
 - Automatic rotation respects the system’s reduced-motion preference.
 
@@ -17,7 +17,7 @@ Open the published GitHub Pages site in Safari on iPad, or any modern browser. U
 
 Seven Earth-history stops, six selected human-dispersal stops, a parent guide, and official-source references checked on 2026-09-26. No accounts, analytics, ads, package downloads or build dependencies are required to run the site.
 
-The app is plain HTML, CSS and JavaScript. Native WebGL renders the planet, with a Canvas overlay for geographical routes. Modern satellite imagery comes from NASA’s Blue Marble collection. Ancient landscapes, cloud effects, lighting and migration lines are illustrative.
+The app is plain HTML, CSS and JavaScript. Native WebGL renders the planet, with a Canvas overlay for geographical routes. Zooming shows broad landforms and coastlines, not street-level detail or political borders. Small countries and city detail are limited by the global source imagery. Modern satellite imagery comes from NASA’s Blue Marble collection. Ancient landscapes, cloud effects, lighting and migration lines are illustrative.
 
 ## Scientific scope
 
