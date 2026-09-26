@@ -1,0 +1,42 @@
+{
+  "name": [
+    "香港維多利亞港",
+    "Victoria Harbour, Hong Kong"
+  ],
+  "bounds": {
+    "west": 114.1,
+    "south": 22.24,
+    "east": 114.26,
+    "north": 22.35
+  },
+  "metresPerPixel": 10,
+  "tileSize": 512,
+  "levels": [
+    {
+      "width": 1649,
+      "height": 1218,
+      "cols": 4,
+      "rows": 3
+    },
+    {
+      "width": 824,
+      "height": 609,
+      "cols": 2,
+      "rows": 2
+    },
+    {
+      "width": 412,
+      "height": 304,
+      "cols": 1,
+      "rows": 1
+    }
+  ],
+  "tiles": 17,
+  "bytes": 641848,
+  "date": "2026-01-13",
+  "scene": "S2B_T49QHE_20260113T030907_L2A",
+  "source": "Copernicus Sentinel-2 L2A true colour (TCI), Element 84 Earth Search on AWS Open Data",
+  "credit": "Contains modified Copernicus Sentinel data 2026",
+  "reprojection": "UTM 49N to lat/lon grid, 64-px mesh, max error 0.0003 source px",
+  "missingData": 6e-05
+}

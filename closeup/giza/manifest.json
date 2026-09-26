@@ -1,0 +1,42 @@
+{
+  "name": [
+    "吉薩金字塔",
+    "Pyramids of Giza"
+  ],
+  "bounds": {
+    "west": 31.05,
+    "south": 29.93,
+    "east": 31.22,
+    "north": 30.04
+  },
+  "metresPerPixel": 10,
+  "tileSize": 512,
+  "levels": [
+    {
+      "width": 1641,
+      "height": 1219,
+      "cols": 4,
+      "rows": 3
+    },
+    {
+      "width": 820,
+      "height": 609,
+      "cols": 2,
+      "rows": 2
+    },
+    {
+      "width": 410,
+      "height": 304,
+      "cols": 1,
+      "rows": 1
+    }
+  ],
+  "tiles": 17,
+  "bytes": 870717,
+  "date": "2026-09-16",
+  "scene": "S2A_T36RUU_20260916T083643_L2A",
+  "source": "Copernicus Sentinel-2 L2A true colour (TCI), Element 84 Earth Search on AWS Open Data",
+  "credit": "Contains modified Copernicus Sentinel data 2026",
+  "reprojection": "UTM 36N to lat/lon grid, 64-px mesh, max error 0.0005 source px",
+  "missingData": 0.0
+}

@@ -37,5 +37,6 @@
   "scene": "S2C_T55HCU_20260908T001553_L2A",
   "source": "Copernicus Sentinel-2 L2A true colour (TCI), Element 84 Earth Search on AWS Open Data",
   "credit": "Contains modified Copernicus Sentinel data 2026",
-  "reprojection": "UTM 55S to lat/lon grid, 64-px mesh, max error 0.0006 source px"
+  "reprojection": "UTM 55S to lat/lon grid, 64-px mesh, max error 0.0006 source px",
+  "missingData": 3e-05
 }

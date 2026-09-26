@@ -1,0 +1,42 @@
+{
+  "name": [
+    "東京灣",
+    "Tokyo Bay"
+  ],
+  "bounds": {
+    "west": 139.68,
+    "south": 35.6,
+    "east": 139.86,
+    "north": 35.71
+  },
+  "metresPerPixel": 10,
+  "tileSize": 512,
+  "levels": [
+    {
+      "width": 1630,
+      "height": 1220,
+      "cols": 4,
+      "rows": 3
+    },
+    {
+      "width": 815,
+      "height": 610,
+      "cols": 2,
+      "rows": 2
+    },
+    {
+      "width": 407,
+      "height": 305,
+      "cols": 1,
+      "rows": 1
+    }
+  ],
+  "tiles": 17,
+  "bytes": 870565,
+  "date": "2026-01-16",
+  "scene": "S2B_T54SUE_20260116T013553_L2A",
+  "source": "Copernicus Sentinel-2 L2A true colour (TCI), Element 84 Earth Search on AWS Open Data",
+  "credit": "Contains modified Copernicus Sentinel data 2026",
+  "reprojection": "UTM 54N to lat/lon grid, 64-px mesh, max error 0.0006 source px",
+  "missingData": 1e-05
+}

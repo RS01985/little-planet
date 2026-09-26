@@ -1,0 +1,42 @@
+{
+  "name": [
+    "亞馬遜河兩河交匯",
+    "Meeting of Waters, Amazon"
+  ],
+  "bounds": {
+    "west": -59.98,
+    "south": -3.2,
+    "east": -59.81,
+    "north": -3.08
+  },
+  "metresPerPixel": 10,
+  "tileSize": 512,
+  "levels": [
+    {
+      "width": 1890,
+      "height": 1327,
+      "cols": 4,
+      "rows": 3
+    },
+    {
+      "width": 945,
+      "height": 663,
+      "cols": 2,
+      "rows": 2
+    },
+    {
+      "width": 472,
+      "height": 331,
+      "cols": 1,
+      "rows": 1
+    }
+  ],
+  "tiles": 17,
+  "bytes": 556644,
+  "date": "2026-08-26",
+  "scene": "S2A_T20MRB_20260826T142159_L2A",
+  "source": "Copernicus Sentinel-2 L2A true colour (TCI), Element 84 Earth Search on AWS Open Data",
+  "credit": "Contains modified Copernicus Sentinel data 2026",
+  "reprojection": "UTM 20S to lat/lon grid, 64-px mesh, max error 0.0000 source px",
+  "missingData": 0.0
+}
