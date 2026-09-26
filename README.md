@@ -41,6 +41,12 @@ Interactive checks cover all 13 stops, mode/language switching, playback/pause, 
 
 ## Image credit
 
-NASA/Goddard Space Flight Center Scientific Visualization Studio. Blue Marble data courtesy of Reto Stockli (NASA/GSFC) and NASA Earth Observatory. [Source and credits](https://svs.gsfc.nasa.gov/2915), retrieved 2026-09-26. The 2048 × 1024 image is bundled as `earth.png`; this is an observation mosaic, not a live image.
+NASA/Goddard Space Flight Center Scientific Visualization Studio. Blue Marble data courtesy of Reto Stockli (NASA/GSFC) and NASA Earth Observatory. [Source and credits](https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/base-map/), retrieved 2026-09-26. The active 5400 × 2700 image (about 8 km per pixel) is bundled as `earth-hd.jpg`; this is an observation mosaic, not a live image.
 
 The geography explorer uses the seven-continent / five-ocean naming convention described by the [National Geographic Society](https://www.nationalgeographic.org/national-geographic-map-policy), checked 2026-09-26.
+
+## Little explorer game
+
+Six gentle find-the-place missions with large illustrated globe pins and matching answer buttons. Tap the matching picture, collect one star per mission, and try again without time limits or penalties. Cantonese prompts and feedback are bundled recordings. Progress lasts for the current game only; nothing is uploaded or tracked. The pins mark example locations, not boundaries or complete habitat ranges.
+
+Collecting all six stars reveals a CSS 3D rainbow celebration. The rainbow and stars become still when the device requests reduced motion. No flashing effects or timed dismissal are used.
